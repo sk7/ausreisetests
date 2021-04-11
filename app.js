@@ -1,58 +1,7 @@
-let updating_url = false;
-let initial_load = true;
+var map = L.map('map').setView([48.1, 16.3], 10);
 
-mapboxgl.accessToken =
-  'xxx'
-
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'https://vtbasemapat.azurewebsites.net/json/style',
-  center: [16.3, 48.1],
-  zoom: 10,
-})
-
-map.on('moveend', function (event) { updateUrl(); });
-
-window.onhashchange = function (arguments) {
-    if (updating_url) { return };
-    var p = parseUrl();
-    if (null === p) { return; }
-    map.jumpTo({
-        center: p.c,
-        zoom: p.z
-    });
-};
-
-let updateUrl = function () {
-    updating_url = true;
-    let z = map.getZoom().toFixed(1);
-    let lnglat = map.getCenter();
-    location.hash = `#${z}/${lnglat.lng.toFixed(6)}/${lnglat.lat.toFixed(6)}`;
-    setTimeout(function () { updating_url = false; }, 250);
-}
-
-let parseUrl = function () {
-    var hash = location.hash.replace('#', '').split('/');
-    if (hash.length !== 3) { return null; }
-    var params = {
-        z: hash[0],
-        c: [hash[1], hash[2]]
-    };
-    console.log(hash);
-    console.log(params);
-    return params;
-}
-
-setTimeout(function () {
-    var p = parseUrl();
-    if (null === p) {
-        initial_load = false; return;
-    }
-    map.jumpTo({
-        center: p.c,
-        zoom: p.z
-    });
-    setTimeout(function () {
-        initial_load = false;
-    }, 500);
-}, 250);
+L.tileLayer('https://maps.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}/{x}.jpeg', {
+  maxZoom: 20,
+  attribution: '<a href="https://www.data.gv.at/katalog/dataset/2c54f4d6-5712-4e5a-a025-b7f7a396c39b" target="_blank">basemap.at</a>',
+  id: 'wien.gv.at'
+}).addTo(map);
