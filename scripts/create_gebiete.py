@@ -14,7 +14,8 @@ with open(sys.argv[1]) as affected_file:
     gebiete_affected = json.load(affected_file)['affected']
 
 
-def combine_gemeinden(gemeinden):
+def combine_gemeinden(gebiet):
+    gemeinden = gebiet['gemeinden']
     polygons = []
     for feature in gemeinden_json['features']:
         if feature['properties']['name'] in gemeinden:
@@ -28,13 +29,17 @@ def combine_gemeinden(gemeinden):
     print(name)
     print("Combined %s Polygons into one" % len(polygons))
 
-    return {
+    new_feature = {
         "type": "Feature",
         "properties": {
             "name": name,
         },
         "geometry": new_geometry
     }
+    del gebiet['gemeinden']
+    new_feature['properties'].update(gebiet)
+
+    return new_feature
 
 
 output = {
