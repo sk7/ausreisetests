@@ -19,7 +19,7 @@ map.fitBounds([
 
 // Overlay layers
 
-const bezirkeAffectedStyle = {
+const affectedStyle = {
     'color': '#ff7800',
     'weight': 5,
     'opacity': 0.65,
@@ -32,26 +32,16 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.name);
   layer.bindTooltip(feature.properties.name)
 }
-// Laender
-const laenderAffectedLayer = new L.geoJSON.ajax("data/geo/laender_995_affected_geo.json", {
+
+const options = {
   onEachFeature: onEachFeature,
-  style: bezirkeAffectedStyle
-}).addTo(map);
-// Gebiete - combinations of Bezirke
-const gebieteAffectedLayer = new L.geoJSON.ajax("data/geo/gebiete_95_affected_geo.json", {
-  onEachFeature: onEachFeature,
-  style: bezirkeAffectedStyle
-}).addTo(map);
-// Bezirke
-const bezirkeAffectedLayer = new L.geoJSON.ajax("data/geo/bezirke_995_affected_geo.json", {
-  onEachFeature: onEachFeature,
-  style: bezirkeAffectedStyle
-}).addTo(map);
-// Gemeinden
-const gemeindenAffectedLayer = new L.geoJSON.ajax("data/geo/gemeinden_95_affected_geo.json", {
-  onEachFeature: onEachFeature,
-  style: bezirkeAffectedStyle
-}).addTo(map);
+  style: affectedStyle
+}
+
+const laenderAffectedLayer = new L.geoJSON.ajax("data/geo/laender_995_affected_geo.json", options).addTo(map);
+const gebieteAffectedLayer = new L.geoJSON.ajax("data/geo/gebiete_95_affected_geo.json", options).addTo(map);
+const bezirkeAffectedLayer = new L.geoJSON.ajax("data/geo/bezirke_995_affected_geo.json", options).addTo(map);
+const gemeindenAffectedLayer = new L.geoJSON.ajax("data/geo/gemeinden_95_affected_geo.json", options).addTo(map);
 
 const overlayLayers = {
   "Bundesländer": laenderAffectedLayer,
