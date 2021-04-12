@@ -1,4 +1,7 @@
-AFFECTED=`cat $1 | jq -c '.[]'`
+#!/bin/bash
+
+AFFECTED=$(cat $1 | jq -c '.[]')
+
 cat $2 | jq -c "
     .name += \"_affected\" |
     .features |= [
