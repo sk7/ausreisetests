@@ -2,6 +2,8 @@
 
 **A map of Austrian areas which require a negative Corona-Test (Antigen or PCR) to leave.**
 
+Live: https://ausreisetests.at/
+
 Architecture:
 
 * Currently affected areas are stored machine-readble JSON in `data/`.
@@ -18,7 +20,7 @@ Data used:
 
 * Tiles: [Basemap.at](https://basemap.at/) (CC-BY 4.0)
 * Overlays: [GeoJSON-TopoJSON-Austria](https://github.com/ginseng666/GeoJSON-TopoJSON-Austria) by Flooh Perlot and [Statistik Austria](https://data.statistik.gv.at/web/meta.jsp?dataset=OGDEXT_GEM_1) (CC BY 4.0)
-* Inspired by [ÖMTC - Corona-Ausreisetestpflicht aus Regionen und Gemeinden in Österreich](https://www.oeamtc.at/news/corona-ausreisetestpflicht-aus-regionen-und-gemeinden-in-oesterreich-43159282)
+* Inspired by [ÖAMTC - Corona-Ausreisetestpflicht aus Regionen und Gemeinden in Österreich](https://www.oeamtc.at/news/corona-ausreisetestpflicht-aus-regionen-und-gemeinden-in-oesterreich-43159282)
 
 Licenses
 
