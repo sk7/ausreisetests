@@ -35,21 +35,29 @@ function bezirkeAffectedFilter(feature) {
   }
 }
 
+function onEachFeature(feature, layer) {
+  console.log(layer)
+  layer.bindPopup(feature.properties.name);
+}
 // Laender - filtered serverside
 const laenderAffectedLayer = new L.geoJSON.ajax("data/geo/laender_995_affected_geo.json", {
+  onEachFeature: onEachFeature,
   style: bezirkeAffectedStyle
 }).addTo(map);
 // Gebiete - combinations of Bezirke - filtered serverside
 const gebieteAffectedLayer = new L.geoJSON.ajax("data/geo/gebiete_95_affected_geo.json", {
+  onEachFeature: onEachFeature,
   style: bezirkeAffectedStyle
 }).addTo(map);
 // Bezirke - filtered clientside
 const bezirkeAffectedLayer = new L.geoJSON.ajax("data/geo/bezirke_995_geo.json", {
+  onEachFeature: onEachFeature,
   filter: bezirkeAffectedFilter,
   style: bezirkeAffectedStyle
 }).addTo(map);
 // Gemeinden  - filtered serverside
 const gemeindenAffectedLayer = new L.geoJSON.ajax("data/geo/gemeinden_95_affected_geo.json", {
+  onEachFeature: onEachFeature,
   style: bezirkeAffectedStyle
 }).addTo(map);
 
