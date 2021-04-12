@@ -27,10 +27,27 @@ const affectedStyle = {
     'fillOpacity': 0.4
 }
 
+const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const dateFallback = "7-Tagesinzidenz unter 400, darauf folgender Tag";
+
 function onEachFeature(feature, layer) {
-  console.log(layer)
-  layer.bindPopup(feature.properties.name);
-  layer.bindTooltip(feature.properties.name)
+  let props = feature.properties;
+  layer.bindTooltip(props.name)
+  layer.bindPopup(`
+    <p>
+      <strong>${props.name}</strong>
+    </p>
+    ${props.ab ? `
+    <p>
+      <strong>Ab:</strong> ${(new Date(Date.parse(props.ab))).toLocaleString('de-DE', dateOptions)}<br>
+      <strong>Bis:</strong> ${props.bis ? (new Date(Date.parse(props.bis))).toLocaleString('de-DE', dateOptions) : dateFallback}
+    </p>` : ''}
+    ${props.verordnung_url ? `
+      <p>
+        <a href=${props.verordnung_url}>Verordnung</a>
+      </p>` : ''}
+
+    `);
 }
 
 const options = {

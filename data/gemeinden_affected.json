@@ -1,6 +1,16 @@
 {
   "affected": [
-    "Fulpmes",
-    "Weißenbach am Lech"
+    {
+      "name": "Fulpmes",
+      "ab": "2021-04-08",
+      "bis": "2021-04-18",
+      "verordnung_url": "https://www.tirol.gv.at/fileadmin/bezirke-gemeinden/innsbruck-land/Downloads_2021/Verordnung_Gde_Fulpmes_Covid_19.pdf"
+    },
+    {
+      "name": "Weißenbach am Lech",
+      "ab": "2021-04-10",
+      "bis": "2021-04-19",
+      "verordnung_url": "https://www.tirol.gv.at/fileadmin/bezirke-gemeinden/reutte/downloads/Verordnung_Weissenbach_am_Lech.pdf"
+    }
   ]
 }

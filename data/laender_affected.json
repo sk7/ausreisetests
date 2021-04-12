@@ -1,5 +1,10 @@
 {
   "affected": [
-    "Tirol"
+    {
+      "name": "Tirol",
+      "ab": "2021-03-31",
+      "bis": "2021-04-14",
+      "verordnung_url": "https://www.ris.bka.gv.at/Dokumente/LgblAuth/LGBLA_TI_20210329_51/LGBLA_TI_20210329_51.pdfsig"
+    }
   ]
 }
