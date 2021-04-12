@@ -62,7 +62,7 @@ const gemeindenAffectedLayer = new L.geoJSON.ajax("data/geo/gemeinden_95_affecte
 
 const overlayLayers = {
   "Bundesländer": laenderAffectedLayer,
-  "Gebiete (kombinierte Bezirke)": gebieteAffectedLayer,
+  "Gebiete (kombinierte Gemeinden)": gebieteAffectedLayer,
   "Bezirke": bezirkeAffectedLayer,
   "Gemeinden": gemeindenAffectedLayer
 };
