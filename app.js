@@ -11,6 +11,12 @@ L.tileLayer('https://maps.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}
   id: 'wien.gv.at'
 }).addTo(map);
 
+map.fitBounds([
+    [46.621, 9.522],
+    [49.011, 16.971]
+]);
+
+
 // Overlay layers
 
 const bezirkeAffectedStyle = {
@@ -18,7 +24,7 @@ const bezirkeAffectedStyle = {
     'weight': 5,
     'opacity': 0.65,
     'fill': '#ff7800',
-    'fillOpacity': 0.5
+    'fillOpacity': 0.4
 }
 
 function bezirkeAffectedFilter(feature) {
@@ -38,6 +44,7 @@ function bezirkeAffectedFilter(feature) {
 function onEachFeature(feature, layer) {
   console.log(layer)
   layer.bindPopup(feature.properties.name);
+  layer.bindTooltip(feature.properties.name)
 }
 // Laender - filtered serverside
 const laenderAffectedLayer = new L.geoJSON.ajax("data/geo/laender_995_affected_geo.json", {
@@ -61,14 +68,11 @@ const gemeindenAffectedLayer = new L.geoJSON.ajax("data/geo/gemeinden_95_affecte
   style: bezirkeAffectedStyle
 }).addTo(map);
 
-
 const overlayLayers = {
   "Bundesländer": laenderAffectedLayer,
   "Gebiete (kombinierte Bezirke)": gebieteAffectedLayer,
   "Bezirke": bezirkeAffectedLayer,
   "Gemeinden": gemeindenAffectedLayer
 };
-
-
 
 const layerControl = L.control.layers(null, overlayLayers).addTo(map);
