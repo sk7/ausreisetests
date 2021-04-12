@@ -7,7 +7,7 @@ var map = L.map('map', {
 
 L.tileLayer('https://maps.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}/{x}.jpeg', {
   maxZoom: 20,
-  attribution: '<a href="https://www.data.gv.at/katalog/dataset/2c54f4d6-5712-4e5a-a025-b7f7a396c39b" target="_blank">basemap.at</a>',
+  attribution: 'Grundkarte: <a href="https://www.basemap.at/" target="_blank">basemap.at</a> | Daten: <a href="https://github.com/ginseng666/GeoJSON-TopoJSON-Austria" target="_blank">Flooh Perlot</a>, <a href="https://data.statistik.gv.at/web/meta.jsp?dataset=OGDEXT_GEM_1" target="_blank">Statistik Austria</a>',
   id: 'wien.gv.at'
 }).addTo(map);
 
