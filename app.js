@@ -35,8 +35,6 @@ function bezirkeAffectedFilter(feature) {
   }
 }
 
-// const bezirkeLayer = new L.geoJSON.ajax("data/bezirke_995_geo.json");
-
 // Laender - filtered serverside
 const laenderAffectedLayer = new L.geoJSON.ajax("data/geo/laender_995_affected_geo.json", {
   style: bezirkeAffectedStyle
@@ -57,7 +55,6 @@ const gemeindenAffectedLayer = new L.geoJSON.ajax("data/geo/gemeinden_95_affecte
 
 
 const overlayLayers = {
-  // "Alle Bezirke": bezirkeLayer,
   "Bundesländer": laenderAffectedLayer,
   "Gebiete (kombinierte Bezirke)": gebieteAffectedLayer,
   "Bezirke": bezirkeAffectedLayer,
