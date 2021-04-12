@@ -25,8 +25,8 @@ function bezirkeAffectedFilter(feature) {
   const bezirkeAffected = [
     "Braunau",
     "Scheibbs",
-    "Wiener Neustadt(Stadt)",
-    "Wiener Neustadt(Land)",
+    "Wiener Neustadt (Stadt)",
+    "Wiener Neustadt (Land)",
     "Neunkirchen",
     "Kufstein",
   ]
