@@ -51,9 +51,23 @@ function onEachFeature(feature, layer) {
     `);
 }
 
+function filter(feature) {
+  if (feature.properties.bis) {
+    endWithTime = `${feature.properties.bis}T23:59+02:00`
+    endDateTime = new Date(Date.parse(endWithTime))
+    now = new Date();
+    if (now > endDateTime) {
+      return false
+    }
+  }
+
+  return true
+}
+
 const options = {
   onEachFeature: onEachFeature,
   style: affectedStyle
+  filter: filter,
 }
 
 const laenderAffectedLayer = new L.geoJSON.ajax("data/geo/laender_995_affected_geo.json", options).addTo(map);
