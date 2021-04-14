@@ -19,14 +19,6 @@ map.fitBounds([
 
 // Overlay layers
 
-const affectedStyle = {
-    'color': '#ff7800',
-    'weight': 5,
-    'opacity': 0.65,
-    'fill': '#ff7800',
-    'fillOpacity': 0.4
-}
-
 const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 const dateFallback = "7-Tagesinzidenz unter 400, darauf folgender Tag";
 
@@ -51,6 +43,34 @@ function onEachFeature(feature, layer) {
     `);
 }
 
+const affectedStyle = {
+    'color': '#ff7800',
+    'weight': 5,
+    'opacity': 0.65,
+    'fill': '#ff7800',
+    'fillOpacity': 0.4
+}
+
+const affectedSoonStyle = {
+    'color': '#9c9b9a',
+    'weight': 5,
+    'opacity': 0.65,
+    'fill': '#9c9b9a',
+    'fillOpacity': 0.4
+}
+
+function style(feature) {
+  if (feature.properties.ab) {
+    startWithTime = `${feature.properties.ab}T00:00+02:00`
+    startDateTime = new Date(Date.parse(startWithTime))
+    now = new Date();
+    if (now < startDateTime) {
+      return affectedSoonStyle
+    }
+  }
+  return affectedStyle
+}
+
 function filter(feature) {
   if (feature.properties.bis) {
     endWithTime = `${feature.properties.bis}T23:59+02:00`
@@ -66,7 +86,7 @@ function filter(feature) {
 
 const options = {
   onEachFeature: onEachFeature,
-  style: affectedStyle
+  style: style,
   filter: filter,
 }
 
