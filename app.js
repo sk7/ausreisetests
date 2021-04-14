@@ -35,7 +35,8 @@ function onEachFeature(feature, layer) {
   layer.bindTooltip(props.name)
   layer.bindPopup(`
     <p>
-      <strong>${props.name}</strong>
+      <strong>${props.name}</strong><br>
+      ${props.info ? `${props.info}` : ''}
     </p>
     ${props.ab ? `
     <p>
