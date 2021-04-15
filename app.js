@@ -20,7 +20,7 @@ map.fitBounds([
 // Overlay layers
 
 const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-const dateFallback = "7-Tagesinzidenz unter 400, darauf folgender Tag";
+const dateFallback = "7-Tagesinzidenz unter 200, für 10 Tage (<a href='https://www.sozialministerium.at/dam/jcr:a1aa7427-4d70-4cf6-b28b-6894c4b3f216/Erlass_betreffend_zusaetzlicher_Massnahmen_in_Hochinzidenzgebieten.pdf'>Erlass</a>)";
 
 function onEachFeature(feature, layer) {
   let props = feature.properties;
