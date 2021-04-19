@@ -61,8 +61,7 @@ const affectedSoonStyle = {
 
 function style(feature) {
   if (feature.properties.ab) {
-    startWithTime = `${feature.properties.ab}T00:00+02:00`
-    startDateTime = new Date(Date.parse(startWithTime))
+    startDateTime = new Date(Date.parse(feature.properties.ab));
     now = new Date();
     if (now < startDateTime) {
       return affectedSoonStyle
@@ -73,8 +72,7 @@ function style(feature) {
 
 function filter(feature) {
   if (feature.properties.bis) {
-    endWithTime = `${feature.properties.bis}T23:59+02:00`
-    endDateTime = new Date(Date.parse(endWithTime))
+    endDateTime = new Date(Date.parse(feature.properties.bis))
     now = new Date();
     if (now > endDateTime) {
       return false
