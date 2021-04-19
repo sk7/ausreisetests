@@ -2,26 +2,6 @@
   "affected": [
     {
       "gemeinden": [
-        "Prägraten am Großvenediger",
-        "Virgen"
-      ],
-      "ab": "2021-04-11",
-      "bis": "2021-04-21",
-      "verordnung_url": "https://www.tirol.gv.at/fileadmin/buergerservice/kundmachungen/bh-lienz/Verordnung_der_Bezirkshauptmannschaft_Lienz_vom_9._April_2021__mit_der_fuer_bestimmte_Gemeinden_des_politischen_Bezirks_Lienz_zusaetzliche_Schutzmassnahmen_zur_Bekaempfung_der_Verbreitung_von_COVID-19_getroffen_werden.pdf"
-    },
-    {
-      "gemeinden": [
-        "Sillian",
-        "Heinfels",
-        "Außervillgraten",
-        "Innervillgraten"
-      ],
-      "ab": "2021-04-11",
-      "bis": "2021-04-21",
-      "verordnung_url": "https://www.tirol.gv.at/fileadmin/buergerservice/kundmachungen/bh-lienz/Verordnung_der_Bezirkshauptmannschaft_Lienz_vom_9._April_2021__mit_der_fuer_bestimmte_Gemeinden_des_politischen_Bezirks_Lienz_zusaetzliche_Schutzmassnahmen_zur_Bekaempfung_der_Verbreitung_von_COVID-19_getroffen_werden.pdf"
-    },
-    {
-      "gemeinden": [
         "Anras",
         "Abfaltersbach",
         "Assling",
