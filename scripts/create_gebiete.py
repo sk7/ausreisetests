@@ -28,11 +28,12 @@ def combine_gemeinden(gebiet):
     # https://gis.stackexchange.com/a/348395
     new_geometry = mapping(cascaded_union(polygons))  # magic
 
+    names = [g['name'] for g in gemeinden]
+    name = "Gebiet der Gemeinden %s" % ", ".join(names[:-1]) + " und " + names[-1]
+    info = ""
     if gebiet.get('name'):
+        info = name
         name = gebiet['name']
-    else:
-        names = [g['name'] for g in gemeinden]
-        name = "Gebiet der Gemeinden %s" % ", ".join(names[:-1]) + " und " + names[-1]
 
     print(name)
     print("Combined %s Polygons into one" % len(polygons))
@@ -41,6 +42,7 @@ def combine_gemeinden(gebiet):
         "type": "Feature",
         "properties": {
             "name": name,
+            "info": info
         },
         "geometry": new_geometry
     }
