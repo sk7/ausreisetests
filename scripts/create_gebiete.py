@@ -18,13 +18,21 @@ def combine_gemeinden(gebiet):
     gemeinden = gebiet['gemeinden']
     polygons = []
     for feature in gemeinden_json['features']:
-        if feature['properties']['name'] in gemeinden:
-            polygon = Polygon([(coor[0], coor[1]) for coor in feature['geometry']['coordinates'][0]])
-            polygons.append(polygon)
+        for gemeinde in gemeinden:
+            # Match Gemeinde by ISO number (if available) and by name
+            if feature['properties']['name'] == gemeinde.get('name') and (not gemeinde.get('iso') or feature['properties']['iso'] == gemeinde.get('iso')):
+                polygon = Polygon([(coor[0], coor[1]) for coor in feature['geometry']['coordinates'][0]])
+                polygons.append(polygon)
+                break
 
     # https://gis.stackexchange.com/a/348395
     new_geometry = mapping(cascaded_union(polygons))  # magic
-    name = "Gebiet der Gemeinden %s" % ", ".join(gemeinden[:-1]) + " und " + gemeinden[-1]
+
+    if gebiet.get('name'):
+        name = gebiet['name']
+    else:
+        names = [g['name'] for g in gemeinden]
+        name = "Gebiet der Gemeinden %s" % ", ".join(names[:-1]) + " und " + names[-1]
 
     print(name)
     print("Combined %s Polygons into one" % len(polygons))
