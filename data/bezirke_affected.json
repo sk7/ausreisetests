@@ -1,28 +1,4 @@
 {
   "affected": [
-    {
-      "name": "Scheibbs",
-      "ab": "2021-04-09T00:00+02:00",
-      "bis": "",
-      "verordnung_url": "https://www.noe.gv.at/noe/Scheibbs/Hochinzidenzgebietsverordnung_BHSB.pdf"
-    },
-    {
-      "name": "Wiener Neustadt (Stadt)",
-      "ab": "2021-03-25T00:00+02:00",
-      "bis": "",
-      "verordnung_url": "https://www.noe.gv.at/noe/Wiener-Neustadt/MagWB_HochinzidentsgebietsVO_24.03.2021.pdf"
-    },
-    {
-      "name": "Wiener Neustadt (Land)",
-      "ab": "2021-04-12T00:00+02:00",
-      "bis": "",
-      "verordnung_url": "https://www.noe.gv.at/noe/Wiener-Neustadt/Hochinzidenzgebietsverordnung_BHWB_12.04.2021.pdf"
-    },
-    {
-      "name": "Neunkirchen",
-      "ab": "2021-04-12T00:00+02:00",
-      "bis": "2021-04-20T23:59+02:00",
-      "verordnung_url": "https://www.noe.gv.at/noe/Neunkirchen/Hochinzidenzgebietsverordnung_BHNK_12.04.2021.pdf"
-    }
   ]
 }

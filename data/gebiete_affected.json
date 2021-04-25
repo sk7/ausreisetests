@@ -2,17 +2,6 @@
   "affected": [
     {
       "gemeinden": [
-        { "name": "Anras"},
-        { "name": "Abfaltersbach"},
-        { "name": "Assling"},
-        { "name": "Leisach"}
-      ],
-      "ab": "2021-04-11T00:00+02:00",
-      "bis": "2021-04-24T23:59+02:00",
-      "verordnung_url": "https://www.tirol.gv.at/fileadmin/buergerservice/kundmachungen/bh-lienz/Verordnung_der_BH_Lienz_vom_14._April_2021__mit_der_die_Verordnung__mit_der_fuer_bestimmte_Gemeinden_des_politischen_Bezirks_Lienz_zusaetzliche_Schutzmassnahmen_zur_Bekaempfung_der_Verbreitung_von_COVID-19_getroffen_werden__geaendert_wird.pdf"
-    },
-    {
-      "gemeinden": [
         { "name": "Alberschwende"},
         { "name": "Doren"},
         { "name": "Sulzberg"},
