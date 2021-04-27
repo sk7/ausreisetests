@@ -3,7 +3,25 @@
     {
       "name": "Tirol",
       "ab": "2021-03-31T00:00+02:00",
-      "bis": "2021-05-05T23:59+02:00"
+      "bis": "2021-05-05T23:59+02:00",
+      "links": [
+        {
+          "title": "ÖAMTC Infos",
+          "url": "https://www.oeamtc.at/news/tirol/ausreisetestpflicht-tirol-26156639"
+        },
+        {
+          "title": "Ein- und Ausreisebestimmungen (tirol.gv.at)",
+          "url": "https://www.tirol.gv.at/gesundheit-vorsorge/infekt/coronavirus-covid-19-informationen/ein-und-ausreisebestimmungen/"
+        },
+        {
+          "title": "Verordnung (LGBl. Nr. 51/2021)",
+          "url": "https://www.ris.bka.gv.at/Dokumente/LgblAuth/LGBLA_TI_20210329_51/LGBLA_TI_20210329_51.html"
+        },
+        {
+          "title": "Verordnung (LGBl. Nr. 66/2021)",
+          "url": "https://www.ris.bka.gv.at/Dokumente/LgblAuth/LGBLA_TI_20210422_66/LGBLA_TI_20210422_66.html"
+        }
+      ]
     }
   ]
 }
