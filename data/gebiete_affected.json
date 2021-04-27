@@ -25,9 +25,15 @@
         { "name": "Schröcken"},
         { "name": "Warth", "iso": "80239"}
       ],
-      "name": "Gebiet Bregenzerwald",
+      "name": "Talschaft Bregenzerwald",
       "ab": "2021-04-21T00:00+02:00",
-      "bis": "2021-04-27T23:59+02:00"
+      "bis": "2021-05-04T23:59+02:00",
+      "links": [
+        { "title": "ÖAMTC Infos", "url": "https://www.oeamtc.at/news/vorarlberg/ausreisetestpflicht-fuer-bregenzerwald-22748103"},
+        { "title": "FAQ und genaue Karten (vorarlberg.at, PDF)", "url": "https://vorarlberg.at/documents/302033/738155/FAQ+Bregenzerwald+und+Lustenau+mit+Anhang.pdf/c0af9531-e6bd-23db-cc08-a567203016d3?t=1619500301090"},
+        { "title": "Verodnung (Amtsblatt Nr. 17)", "url": "https://vorarlberg.at/documents/302033/473124/Amtsblatt+2021+-+Nr.+17.pdf/058cd7dc-bc06-bada-4625-f25fd5a47d1c"},
+        { "title": "Verodnung (Amtsblatt Nr. 19)", "url": "https://vorarlberg.at/documents/302033/473124/Amtsblatt+2021+-+Nr.+19.pdf/8d319de8-08d8-0131-b7f3-b25aa7f24414"}
+      ]
     }
   ]
 }
