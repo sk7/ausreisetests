@@ -3,22 +3,63 @@
     {
       "name": "Großarl",
       "ab": "2021-04-21T06:00+02:00",
-      "bis": "2021-05-02T23:59+02:00"
+      "bis": "2021-05-02T23:59+02:00",
+      "links": [
+        {
+          "title": "ÖAMTC Infos",
+          "url": "https://www.oeamtc.at/news/salzburg/sbg-ausreisetestpflicht-fuer-vier-salzburger-gemeinden-43891089"
+        },
+        {
+          "title": "Verordnung",
+          "url": "https://service.salzburg.gv.at/pub/get/23842"
+        }
+      ]
     },
     {
       "name": "Hüttschlag",
       "ab": "2021-04-21T06:00+02:00",
-      "bis": "2021-05-02T23:59+02:00"
+      "bis": "2021-05-02T23:59+02:00",
+      "links": [
+        {
+          "title": "ÖAMTC Infos",
+          "url": "https://www.oeamtc.at/news/salzburg/sbg-ausreisetestpflicht-fuer-vier-salzburger-gemeinden-43891089"
+        },
+        {
+          "title": "Verordnung",
+          "url": "https://service.salzburg.gv.at/pub/get/23842"
+        }
+      ]
     },
     {
       "name": "Straßwalchen",
       "ab": "2021-04-22T06:00+02:00",
-      "bis": "2021-05-02T23:59+02:00"
+      "bis": "2021-05-02T23:59+02:00",
+      "links": [
+        {
+          "title": "ÖAMTC Infos",
+          "url": "https://www.oeamtc.at/news/salzburg/sbg-ausreisetestpflicht-fuer-vier-salzburger-gemeinden-43891089"
+        },
+        {
+          "title": "Verordnung",
+          "url": "https://service.salzburg.gv.at/pub/get/23846"
+        }
+      ]
     },
     {
       "name": "Längenfeld",
       "ab": "2021-04-23T00:00+02:00",
       "bis": "2021-05-03T23:59+02:00"
+    },
+    {
+      "name": "Hallein",
+      "ab": "2021-04-30T06:00+02:00",
+      "bis": "2021-05-03T23:59+02:00",
+      "links": [
+        {
+          "title": "ÖAMTC Infos",
+          "url": "https://www.oeamtc.at/news/salzburg/sbg-ausreisetestpflicht-fuer-vier-salzburger-gemeinden-43891089"
+        }
+      ]
     }
   ]
 }
