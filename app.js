@@ -35,11 +35,12 @@ function onEachFeature(feature, layer) {
       <strong>Ab:</strong> ${(new Date(Date.parse(props.ab))).toLocaleString('de-DE', dateOptions)}<br>
       <strong>Bis:</strong> ${props.bis ? (new Date(Date.parse(props.bis))).toLocaleString('de-DE', dateOptions) : dateFallback}
     </p>` : ''}
-    ${props.verordnung_url ? `
+    ${props.links ? `
       <p>
-        <a href=${props.verordnung_url}>Verordnung</a>
-      </p>` : ''}
-
+      ${props.links.map(link =>
+        `<a href=${link['url']}>${link['title']}</a><br />`
+      ).join('')}
+      </p>`: ''}
     `);
 }
 
