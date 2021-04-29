@@ -57,6 +57,10 @@
         {
           "title": "Ein- und Ausreisebestimmungen für Gemeinden (tirol.gv.at)",
           "url": "https://www.tirol.gv.at/gesundheit-vorsorge/infekt/coronavirus-covid-19-informationen/gemeindeausreise/"
+        },
+        {
+          "title": "Verordnung (PDF)",
+          "url": "https://www.tirol.gv.at/fileadmin/buergerservice/kundmachungen/bh-imst/Sonstiges/Verordnung_vom_22.04.2021.pdf"
         }
       ]
     },
@@ -83,6 +87,25 @@
         {
           "title": "ÖAMTC Infos für Salzburg",
           "url": "https://www.oeamtc.at/news/salzburg/sbg-ausreisetestpflicht-fuer-vier-salzburger-gemeinden-43891089"
+        }
+      ]
+    },
+    {
+      "name": "Telfs",
+      "ab": "2021-04-30T00:00+02:00",
+      "bis": "2021-05-09T23:59+02:00",
+      "links": [
+        {
+          "title": "ÖAMTC Infos für Tirol",
+          "url": "https://www.oeamtc.at/news/tirol/ausreisetestpflicht-tirol-26156639"
+        },
+        {
+          "title": "Ein- und Ausreisebestimmungen für Gemeinden (tirol.gv.at)",
+          "url": "https://www.tirol.gv.at/gesundheit-vorsorge/infekt/coronavirus-covid-19-informationen/gemeindeausreise/"
+        },
+        {
+          "title": "Verordnung (PDF)",
+          "url": "https://www.tirol.gv.at/fileadmin/bezirke-gemeinden/innsbruck-land/Downloads_2021/Verordnung_der_Bezirkshauptmannscha.pdf"
         }
       ]
     }
