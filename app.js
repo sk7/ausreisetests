@@ -38,7 +38,7 @@ function onEachFeature(feature, layer) {
     ${props.links ? `
       <p>
       ${props.links.map(link =>
-        `<a href=${link['url']}>${link['title']}</a><br />`
+        `<a href="${link['url']}" target="_blank">${link['title']}</a><br />`
       ).join('')}
       </p>`: ''}
     `);
