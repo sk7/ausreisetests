@@ -82,11 +82,15 @@
     {
       "name": "Hallein",
       "ab": "2021-04-30T06:00+02:00",
-      "bis": "2021-05-03T23:59+02:00",
+      "bis": "2021-05-09T23:59+02:00",
       "links": [
         {
-          "title": "ÖAMTC Infos für Salzburg",
-          "url": "https://www.oeamtc.at/news/salzburg/sbg-ausreisetestpflicht-fuer-vier-salzburger-gemeinden-43891089"
+          "title": "ÖAMTC Infos",
+          "url": "https://www.oeamtc.at/news/corona-ausreisetestpflicht-aus-regionen-und-gemeinden-in-oesterreich-43159282"
+        },
+        {
+          "title": "Verordnung (PDF)",
+          "url": "https://service.salzburg.gv.at/pub/get/23913"
         }
       ]
     },
