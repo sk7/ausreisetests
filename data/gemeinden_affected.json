@@ -46,9 +46,24 @@
       ]
     },
     {
+      "name": "Hallein",
+      "ab": "2021-04-30T06:00+02:00",
+      "bis": "2021-05-09T23:59+02:00",
+      "links": [
+        {
+          "title": "ÖAMTC Infos",
+          "url": "https://www.oeamtc.at/news/corona-ausreisetestpflicht-aus-regionen-und-gemeinden-in-oesterreich-43159282"
+        },
+        {
+          "title": "Verordnung (PDF)",
+          "url": "https://service.salzburg.gv.at/pub/get/23913"
+        }
+      ]
+    },
+    {
       "name": "Längenfeld",
       "ab": "2021-04-23T00:00+02:00",
-      "bis": "2021-05-03T23:59+02:00",
+      "bis": "2021-05-13T23:59+02:00",
       "links": [
         {
           "title": "ÖAMTC Infos für Tirol",
@@ -59,7 +74,7 @@
           "url": "https://www.tirol.gv.at/gesundheit-vorsorge/infekt/coronavirus-covid-19-informationen/gemeindeausreise/"
         },
         {
-          "title": "Verordnung (PDF)",
+          "title": "Verordnung (PDF) - nur bis 3.Mai 2021",
           "url": "https://www.tirol.gv.at/fileadmin/buergerservice/kundmachungen/bh-imst/Sonstiges/Verordnung_vom_22.04.2021.pdf"
         }
       ]
@@ -76,21 +91,10 @@
         {
           "title": "Ein- und Ausreisebestimmungen für Gemeinden (tirol.gv.at)",
           "url": "https://www.tirol.gv.at/gesundheit-vorsorge/infekt/coronavirus-covid-19-informationen/gemeindeausreise/"
-        }
-      ]
-    },
-    {
-      "name": "Hallein",
-      "ab": "2021-04-30T06:00+02:00",
-      "bis": "2021-05-09T23:59+02:00",
-      "links": [
-        {
-          "title": "ÖAMTC Infos",
-          "url": "https://www.oeamtc.at/news/corona-ausreisetestpflicht-aus-regionen-und-gemeinden-in-oesterreich-43159282"
         },
         {
-          "title": "Verordnung (PDF)",
-          "url": "https://service.salzburg.gv.at/pub/get/23913"
+          "title": "Verordnung (PDF) - nur bis 3.Mai 2021",
+          "url": "https://www.tirol.gv.at/fileadmin/buergerservice/kundmachungen/bh-lienz/Verordnung_der_Bezirkshauptmannschaft_Lienz_vom_28._April_2021__mit_der_fuer_die_Gemeinde_Abfaltersbach_zusaetzliche_Schutzmassnahmen_zur_Bekaempfung_der_Verbreitung_von_COVID-19_getroffen_werden.pdf"
         }
       ]
     },
