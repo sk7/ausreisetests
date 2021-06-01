@@ -48,6 +48,20 @@
       "links": [
         { "title": "ÖAMTC Infos", "url": "https://www.oeamtc.at/news/vorarlberg/ausreisetestpflicht-fuer-bregenzerwald-und-ab-5-mai-rheindelta-22748103"}
       ]
+    },
+    {
+      "gemeinden": [
+        { "name": "St. Leonhard im Pitztal"},
+        { "name": "Wenns"},
+        { "name": "Jerzens"},
+        { "name": "Arzl im Pitztal"}
+      ],
+      "name": "Pitztal",
+      "ab": "2021-05-30T00:00+02:00",
+      "bis": "2021-06-09T23:59+02:00",
+      "links": [
+        { "title": "ÖAMTC Infos", "url": "https://www.oeamtc.at/news/tirol/ausreisetestpflichten-tirol-26156639"}
+      ]
     }
   ]
 }
